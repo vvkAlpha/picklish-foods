@@ -153,6 +153,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const productsContainer = document.getElementById('products-container');
     const productContainer = document.getElementById('product-container');
     const testimonialContainer = document.getElementById('testimonial-container');
+    const footerProducts = document.getElementById('footer-products');
     const filterButtons = document.querySelectorAll('.filter-button');
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
@@ -266,6 +267,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function showSlide(index) {
         testimonialContainer.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    // Populate Footer products
+    if (footerProducts) {
+        products.forEach(product => {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `<a href="#products">${product.title}</a>`;
+            footerProducts.appendChild(listItem);
+        });
     }
 
     // Form Submission
