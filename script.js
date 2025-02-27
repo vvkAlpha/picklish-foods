@@ -120,24 +120,28 @@ const productItems = [
 const testimonials = [
     {
         id: 1,
+        //image: "/api/placeholder/150/150",
         text: "I recently tried Picklish food's home made mango and buffalo pickles, and I have to say—they took me right back to childhood meals at my granny’s. If you’re craving that authentic, homemade pickle taste, Picklish is a must-try!",
         name: "Muhammed Javed (MjR)",
         position: "IT Professional"
     },
     {
         id: 2,
+        //image: "/api/placeholder/150/150",
         text: "Delicious 😋 and the real homely taste and quality..",
         name: "Sujith Pulpara",
         position: "Cafe Consultant"
     },
     {
         id: 3,
+        //image: "/api/placeholder/150/150",
         text: "Really loved the pickles ! 😍 such a droooooling taste!..",
         name: "Kalavathi Swaminathan",
         position: "Home maker"
     },
     {
         id: 4,
+        //image: "/api/placeholder/150/150",
         text: "The pickle was so delicious. I ordered cut mango pickle. It was a healthy and delicious version of pickle I have ever eaten",
         name: "Aparna P Menon",
         position: "Chartered Accountant"
@@ -231,9 +235,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const testimonialCard = document.createElement('div');
             testimonialCard.className = 'testimonial-card';
             testimonialCard.innerHTML = `
-                <div class="client-image">
-                    <img src="${testimonial.image}" alt="${testimonial.name}">
-                </div>
                 <p class="testimonial-text">${testimonial.text}</p>
                 <h4 class="client-name">${testimonial.name}</h4>
                 <p class="client-position">${testimonial.position}</p>
