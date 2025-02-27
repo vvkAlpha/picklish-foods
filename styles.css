@@ -195,7 +195,7 @@ header.scrolled {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/api/placeholder/1200/800') center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.jpg') center/cover no-repeat fixed;
     color: var(--light-color);
     margin-bottom: var(--section-spacing);
     position: relative;
@@ -1134,14 +1134,7 @@ footer::before {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-.hero {
-    background: url('background.jpg') no-repeat center center/cover;
-    height: 100vh; /* Full screen height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(0, 0, 0); /* Adjust text color for visibility */
-}
+
 .social-links {
     display: flex;
     gap: 15px;
