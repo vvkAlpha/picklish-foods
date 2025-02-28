@@ -343,3 +343,36 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+// WhatsApp Button Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the WhatsApp button element
+    const whatsappBtn = document.querySelector('.whatsapp-btn');
+    
+    if (whatsappBtn) {
+        // Add bounce animation when the page loads
+        setTimeout(function() {
+            whatsappBtn.classList.add('bounce');
+            
+            setTimeout(function() {
+                whatsappBtn.classList.remove('bounce');
+            }, 1000);
+        }, 2000);
+    }
+});
+
+// Add bounce animation class
+if (!document.querySelector('style.whatsapp-bounce-style')) {
+    const style = document.createElement('style');
+    style.className = 'whatsapp-bounce-style';
+    style.textContent = `
+        .bounce {
+            animation: bounce 0.5s;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    `;
+    document.head.appendChild(style);
+}
