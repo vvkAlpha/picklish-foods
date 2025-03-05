@@ -1,0 +1,20 @@
+picklish-foods/
+│
+├── assets/
+│   ├── css/
+│   │   └── product_page.css
+│   ├── js/
+│   │   └── product_page.js
+│   └── images/
+│       ├── *.jpg
+│       ├── *.jpg
+│       └── ...
+│
+├── products/
+│   ├── beef_Pickle.html
+│   ├── prawns_pickle.html
+│   └── ...
+│
+└── index.html
+│
+└── site_map.txt
