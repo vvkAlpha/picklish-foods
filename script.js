@@ -108,12 +108,40 @@ const productItems = [
         description: "A tangy, spicy delight! Made with fresh ivygourd and aromatic spices, perfect for adding bold flavor to any meal."
     },
     {
-        id: 7,
+        id: 14,
         category: "veg",
         image: "assets/images/veg/bitter-gourd.jpg",
         title: "Bittergourd Pickle",
         description: "A bold, tangy delight made with fresh bitter gourd, aromatic spices, and no artificial preservatives."
     },
+    {
+        id: 15,
+        category: "veg",
+        image: "assets/images/veg/puliyinji.jpg",
+        title: "Puliyinji",
+        description: "A zesty Kerala classic made with ginger, tamarind, jaggery, and spices—bursting with sweet, sour, and spicy notes, without any artificial additives."
+    },
+    {
+        id: 16, 
+        category: "veg",
+        image: "assets/images/veg/soya-chunks.jpg",
+        title: "Soya Chunks Pickle",
+        description: "A hearty, flavorful pickle made with protein-rich soya chunks, traditional Kerala spices, and zero artificial preservatives—perfectly balanced with tang and heat."
+    },
+    {
+        id: 17,
+        category: "nveg",
+        image: "assets/images/veg/pork.jpg",
+        title: "Pork Pickle",
+        description: "A rich, fiery indulgence made with tender pork chunks, slow-cooked in authentic Kerala spices—preservative-free and packed with bold, meaty flavor."
+    },
+    {
+        id: 18,
+        category: "veg",
+        image: "assets/images/veg/chutney-powder.jpg",
+        title: "Chutney Powder",
+        description: "A flavorful dry blend of roasted lentils, spices, and chillies—perfect with idlis, dosas, or rice with desi ghee, and made without any artificial preservatives."
+    }
 ];
 
 // Data for testimonials
