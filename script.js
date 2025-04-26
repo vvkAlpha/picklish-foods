@@ -131,7 +131,7 @@ const productItems = [
     {
         id: 17,
         category: "nveg",
-        image: "assets/images/veg/pork.jpg",
+        image: "assets/images/nveg/pork.jpg",
         title: "Pork Pickle",
         description: "A rich, fiery indulgence made with tender pork chunks, slow-cooked in authentic Kerala spices—preservative-free and packed with bold, meaty flavor."
     },
