@@ -1467,6 +1467,7 @@ footer::before {
         font-size: 9px;
     }
 }
+
 /* Announcement Banner */
 .announcement-banner {
     position: fixed;
@@ -1484,24 +1485,44 @@ footer::before {
   }
   
   .banner-content {
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center content horizontally */
+    position: relative;
     width: 100%;
     max-width: 1200px; /* Match your site’s content width */
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Hide text that overflows during scrolling */
   }
   
-  .banner-content p {
-    margin: 5px 0; /* Add spacing between paragraphs */
+  .scrolling-text {
+    display: inline-block;
+    white-space: nowrap; /* Keep text on one line */
     font-size: 16px;
     font-weight: 500;
-    text-align: center; /* Center text for better appearance */
+    margin: 0;
+    padding-right: 20px; /* Space to prevent text from overlapping close button */
+    animation: scroll 20s linear infinite; /* Scrolling animation */
+  }
+  
+  /* Scrolling animation */
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%); /* Start from right */
+    }
+    100% {
+      transform: translateX(-100%); /* Move to left */
+    }
+  }
+  
+  /* Pause animation on hover */
+  .scrolling-text:hover {
+    animation-play-state: paused;
   }
   
   .close-banner {
-    position: absolute; /* Position close button in top-right corner */
-    top: 10px;
-    right: 20px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%); /* Center vertically */
     background: none;
     border: none;
     color: #fff;
@@ -1538,7 +1559,7 @@ footer::before {
   
   /* Responsive adjustments */
   @media (max-width: 768px) {
-    .banner-content p {
+    .scrolling-text {
       font-size: 14px;
     }
     .close-banner {
@@ -1550,3 +1571,4 @@ footer::before {
       padding: 8px 12px;
     }
   }
+  
