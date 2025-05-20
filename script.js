@@ -796,21 +796,36 @@ document.addEventListener('DOMContentLoaded', () => {
     const banner = document.getElementById('announcement-banner');
     const closeButton = document.getElementById('close-banner');
     const announcementButton = document.getElementById('announcement-button');
+    const scrollingText = document.querySelector('.scrolling-text');
   
-    // Check if banner was previously closed
-    if (localStorage.getItem('bannerClosed') === 'true') {
-      banner.classList.add('hidden');
+    // Check if CSS animation is supported
+    const supportsCSSAnimation = window.CSS && window.CSS.supports('animation', 'scroll 20s linear infinite');
+  
+    if (!supportsCSSAnimation) {
+      // JavaScript fallback for scrolling
+      let position = window.innerWidth;
+      const scrollWidth = scrollingText.offsetWidth;
+      const scrollSpeed = 2; // Pixels per frame
+  
+      function scrollText() {
+        position -= scrollSpeed;
+        if (position < -scrollWidth) {
+          position = window.innerWidth;
+        }
+        scrollingText.style.transform = `translateX(${position}px)`;
+        requestAnimationFrame(scrollText);
+      }
+  
+      scrollText();
     }
   
     // Close banner
     closeButton.addEventListener('click', () => {
       banner.classList.add('hidden');
-      localStorage.setItem('bannerClosed', 'true');
     });
   
     // Reopen banner
     announcementButton.addEventListener('click', () => {
       banner.classList.remove('hidden');
-      localStorage.setItem('bannerClosed', 'false');
     });
   });
