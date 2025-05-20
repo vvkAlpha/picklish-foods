@@ -1,19 +1,3 @@
-// Product data for Picklish Foods
-//const products = [
-//    {
-//        id: 1,
-//        icon: "🟩",
-//        title: "Veg Pickles",
-//        description: "Savor the essence of tradition with our handcrafted vegetarian pickles, made from farm-fresh ingredients and authentic recipes. From tangy mango to fiery chili, each jar is packed with rich spices and nostalgic flavors. Free from preservatives and crafted with time-honored methods, our pickles are the perfect companion to any meal. Rediscover the joy of homemade goodness with Picklish!"
-//    },
-//    {
-//        id: 2,
-//        icon: "🟥",
-//        title: "Non-Veg Pickles",
-//        description: "Indulge in the bold, hearty flavors of our handcrafted non-vegetarian pickles, made with premium cuts of meat and seafood, infused with rich spices, and aged to perfection. Free from preservatives and rooted in tradition, each jar captures the essence of authentic regional flavors. Perfectly paired with rice, rotis, or snacks, Picklish brings you a true taste of indulgence in every bite!"
-//    }
-//];
-
 // Data for product
 const productItems = [
     {
@@ -21,126 +5,162 @@ const productItems = [
         category: "nveg",
         image: "assets/images/nveg/buff-slices-raw-meat.jpg",
         title: "Buffalo Pickle",
-        description: "A bold, tangy delight featuring tender buffalo meat, aromatic spices, and rich flavors. Perfect with rice or parathas!"
+        description: "A bold, tangy delight featuring tender buffalo meat, aromatic spices, and rich flavors. Perfect with rice or parathas!",
+        price: "Price : ₹ 1.5/gm",
+        code: "PFNC002"
     },
     {
         id: 2,
         category: "nveg",
         image: "assets/images/nveg/raw-shrimps.jpg",
         title: "Prawn Pickle",
-        description: "A coastal delicacy with succulent prawns, rich spices, and tangy flavors. Perfect with rice, parathas, or any meal!"
+        description: "A coastal delicacy with succulent prawns, rich spices, and tangy flavors. Perfect with rice, parathas, or any meal!",
+        price: "Price : ₹ 1.8/gm",
+        code: "PFNC008"
     },
     {
         id: 3,
         category: "nveg",
         image: "assets/images/nveg/yellowfin-tuna.jpg",
         title: "Yellowfin Tuna Pickle",
-        description: "A gourmet seafood delight with premium Yellowfin Tuna, bold spices, and tangy flavors. Perfect with rice, rotis, or any meal!"
+        description: "A gourmet seafood delight with premium Yellowfin Tuna, bold spices, and tangy flavors. Perfect with rice, rotis, or any meal!",
+        price: "Price : ₹ 1.2/gm",
+        code: "PFNC004"
     },
     {
         id: 4,
         category: "nveg",
         image: "assets/images/nveg/white-tuna.jpg",
         title: "Tuna Pickle",
-        description: "A bold seafood delight with tender tuna, rich spices, and tangy flavors. Perfect with rice, flatbreads, or any meal!"
+        description: "A bold seafood delight with tender tuna, rich spices, and tangy flavors. Perfect with rice, flatbreads, or any meal!",
+        price: "Price : ₹ 1.2/gm",
+        code: "PFNC003"
     },
     {
         id: 5,
         category: "nveg",
         image: "assets/images/nveg/chicken-breasts.jpg",
         title: "Chicken Pickle",
-        description: "A savory delight with tender chicken, bold spices, and tangy flavors. Perfect with rice, parathas, or sandwiches!"
+        description: "A savory delight with tender chicken, bold spices, and tangy flavors. Perfect with rice, parathas, or sandwiches!",
+        price: "Price : ₹ 1.2/gm",
+        code: "PFNC001"
     },
     {
         id: 6,
         category: "nveg",
         image: "assets/images/nveg/squid.jpg",
         title: "Squid Pickle",
-        description: "A bold coastal delicacy with tender squid, rich spices, and tangy flavors. Perfect with rice, chapatis, or any meal!"
+        description: "A bold coastal delicacy with tender squid, rich spices, and tangy flavors. Perfect with rice, chapatis, or any meal!",
+        price: "Price : ₹ 1.2/gm",
+        code: "PFNC009"
     },
     {
         id: 7,
         category: "veg",
         image: "assets/images/veg/dates.jpg",
         title: "Dates Pickle",
-        description: "A unique fusion of sweet dates, tangy spices, and bold flavors. Perfect with flatbreads, rice, or biriyani platters!"
+        description: "A unique fusion of sweet dates, tangy spices, and bold flavors. Perfect with flatbreads, rice, or biriyani platters!",
+        price: "Price : ₹ 0.9/gm",
+        code: "PFVC010"
     },
     {
         id: 8,
         category: "veg",
         image: "assets/images/veg/dates-lemon.jpg",
         title: "Lime Dates Pickle",
-        description: "A perfect blend of tangy limes, sweet dates, and rich spices. Ideal with biryanis, parathas, or any meal!"
+        description: "A perfect blend of tangy limes, sweet dates, and rich spices. Ideal with biryanis, parathas, or any meal!",
+        price: "Price : ₹ 0.74/gm",
+        code: "PFVC011"
     },
     {
         id: 9,
         category: "veg",
         image: "assets/images/veg/yellow-lemons.jpg",
         title: "Lemon Pickle",
-        description: "A zesty blend of fresh lemons and aromatic spices. Perfect with rice, parathas, dosas, or any meal!"
+        description: "A zesty blend of fresh lemons and aromatic spices. Perfect with rice, parathas, dosas, or any meal!",
+        price: "Price : ₹ 0.54/gm",
+        code: "PFVC003"
     },
     {
         id: 10,
         category: "veg",
         image: "assets/images/veg/fresh-green-mango.jpg",
         title: "Cut Mango Pickle",
-        description: "Tangy raw mangoes infused with bold spices. Perfect with rice, rotis, parathas, or as a zesty side!"
+        description: "Tangy raw mangoes infused with bold spices. Perfect with rice, rotis, parathas, or as a zesty side!",
+        price: "Price : ₹ 0.5/gm",
+        code: "PFVC002"
     },
     {
         id: 11,
         category: "veg",
         image: "assets/images/veg/chilly.jpg",
         title: "Chilly Pickle",
-        description: "Spicy, tangy, and bold! Made with fresh chilies and aromatic spices, perfect for adding heat to any meal."
+        description: "Spicy, tangy, and bold! Made with fresh chilies and aromatic spices, perfect for adding heat to any meal.",
+        price: "Price : ₹ 0.75/gm",
+        code: "PFVC006"
     },
     {
         id: 12,
         category: "veg",
         image: "assets/images/veg/green-gooseberries-wooden-bowl.jpg",
         title: "Gooseberry Pickle",
-        description: "A tangy, spicy delight! Made with fresh gooseberries and aromatic spices, perfect for adding bold flavor to any meal."
+        description: "A tangy, spicy delight! Made with fresh gooseberries and aromatic spices, perfect for adding bold flavor to any meal.",
+        price: "Price : ₹ 0.58/gm",
+        code: "PFVC014"
     },
     {
         id: 13,
         category: "veg",
         image: "assets/images/veg/Ivygourd.jpg",
         title: "Ivygourd Pickle",
-        description: "A tangy, spicy delight! Made with fresh ivygourd and aromatic spices, perfect for adding bold flavor to any meal."
+        description: "A tangy, spicy delight! Made with fresh ivygourd and aromatic spices, perfect for adding bold flavor to any meal.",
+        price: "Price : ₹ 0.90/gm",
+        code: "PFVC015"
     },
     {
         id: 14,
         category: "veg",
         image: "assets/images/veg/bitter-gourd.jpg",
         title: "Bittergourd Pickle",
-        description: "A bold, tangy delight made with fresh bitter gourd, aromatic spices, and no artificial preservatives."
+        description: "A bold, tangy delight made with fresh bitter gourd, aromatic spices, and no artificial preservatives.",
+        price: "Price : ₹ 0.45/gm",
+        code: "PFVC009"
     },
     {
         id: 15,
         category: "veg",
         image: "assets/images/veg/puliyinji.jpg",
         title: "Puliyinji",
-        description: "A zesty Kerala classic made with ginger, tamarind, jaggery, and spices—bursting with sweet, sour, and spicy notes, without any artificial additives."
+        description: "A zesty Kerala classic made with ginger, tamarind, jaggery, and spices—bursting with sweet, sour, and spicy notes, without any artificial additives.",
+        price: "Price : ₹ 0.80/gm",
+        code: "PFVC016"
     },
     {
         id: 16, 
         category: "veg",
         image: "assets/images/veg/soya-chunks.jpg",
         title: "Soya Chunks Pickle",
-        description: "A hearty, flavorful pickle made with protein-rich soya chunks, traditional Kerala spices, and zero artificial preservatives—perfectly balanced with tang and heat."
+        description: "A hearty, flavorful pickle made with protein-rich soya chunks, traditional Kerala spices, and zero artificial preservatives—perfectly balanced with tang and heat.",
+        price: "Price : ₹ 0.65/gm",
+        code: "PFVC017"
     },
     {
         id: 17,
         category: "nveg",
         image: "assets/images/nveg/pork.jpg",
         title: "Pork Pickle",
-        description: "A rich, fiery indulgence made with tender pork chunks, slow-cooked in authentic Kerala spices—preservative-free and packed with bold, meaty flavor."
+        description: "A rich, fiery indulgence made with tender pork chunks, slow-cooked in authentic Kerala spices—preservative-free and packed with bold, meaty flavor.",
+        price: "Price : ₹ 2.5/gm",
+        code: "PFNC011"
     },
     {
         id: 18,
         category: "veg",
         image: "assets/images/veg/chutney-powder.jpg",
         title: "Chutney Powder",
-        description: "A flavorful dry blend of roasted lentils, spices, and chillies—perfect with idlis, dosas, or rice with desi ghee, and made without any artificial preservatives."
+        description: "A flavorful dry blend of roasted lentils, spices, and chillies—perfect with idlis, dosas, or rice with desi ghee, and made without any artificial preservatives.",
+        price: "Price : ₹ 0.95/gm",
+        code: "PFVC018"
     }
 ];
 
@@ -783,3 +803,26 @@ document.addEventListener('DOMContentLoaded', function() {
     // Update date every minute
     setInterval(updateDate, 60 * 1000);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const banner = document.getElementById('announcement-banner');
+    const closeButton = document.getElementById('close-banner');
+    const announcementButton = document.getElementById('announcement-button');
+  
+    // Check if banner was previously closed
+    if (localStorage.getItem('bannerClosed') === 'true') {
+      banner.classList.add('hidden');
+    }
+  
+    // Close banner
+    closeButton.addEventListener('click', () => {
+      banner.classList.add('hidden');
+      localStorage.setItem('bannerClosed', 'true');
+    });
+  
+    // Reopen banner
+    announcementButton.addEventListener('click', () => {
+      banner.classList.remove('hidden');
+      localStorage.setItem('bannerClosed', 'false');
+    });
+  });
