@@ -223,20 +223,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Populate Products
-    if (productsContainer) {
-        products.forEach(product => {
-            const productCard = document.createElement('div');
-            productCard.className = 'product-card'; // Using product-card class from your CSS
-            productCard.innerHTML = `
-                <div class="product-icon">${product.icon}</div>
-                <h3>${product.title}</h3>
-                <p>${product.description}</p>
-            `;
-            productsContainer.appendChild(productCard);
-        });
-    }
-
     // Populate product
     if (productContainer) {
         productItems.forEach(item => {
@@ -248,6 +234,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="product-overlay">
                     <h3>${item.title}</h3>
                     <p>${item.description}</p>
+                    <p> </p>
+                    <p>${item.price}</p>
                 </div>
             `;
             productContainer.appendChild(productItem);
