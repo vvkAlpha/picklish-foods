@@ -175,21 +175,18 @@ const testimonials = [
     },
     {
         id: 2,
-        //image: "/api/placeholder/150/150",
         text: "Delicious 😋 and the real homely taste and quality..",
         name: "Sujith Pulpara",
         position: "Cafe Consultant"
     },
     {
         id: 3,
-        //image: "/api/placeholder/150/150",
-        text: "Really loved the pickles ! 😍 such a droooooling taste!..",
-        name: "Kalavathi Swaminathan",
-        position: "Home maker"
+        text: "I had an amazing experience ordering customized pickles from Picklish! The ability to choose oil, spices, and ingredients made it perfect for my taste. The quality and quantity exceeded expectations, with well-packed and timely delivery. The flavors were mouth-watering, bringing back nostalgic memories of mom’s homemade pickles. Their prompt replies and affordable pricing made the process even better. I’m already looking forward to my next order—highly recommended for all pickle lovers!",
+        name: "Christy Jeyaram",
+        position: "IT Professional"
     },
     {
         id: 4,
-        //image: "/api/placeholder/150/150",
         text: "The pickle was so delicious. I ordered cut mango pickle. It was a healthy and delicious version of pickle I have ever eaten",
         name: "Aparna P Menon",
         position: "Chartered Accountant"
@@ -199,6 +196,18 @@ const testimonials = [
         text: "I've tried the cut mango, prawns, and dates pickle from Picklish, and they’re all absolutely delicious!!!The dates pickle❤️ I loved it so much that the jar was gone in just a few days. The natural sweetness of the dates mixed with the perfect blend of tangy and spicy flavors is so addictive.If you haven’t tried date pickle yet, you’re definitely missing out!",
         name: "Manjusha TV",
         position: "IT Professional"
+    },
+    {
+        id: 6,
+        text: "Simply mind blowing 👌 All are superb. I tried gooseberry, lemon n dates, prawns and tuna pickle. All are par excellent. My family is also a fan of all these. Must have item now for us !!",
+        name: "Meena Menon",
+        position: "Hospitality Manager"
+    },
+    {
+        id: 7,
+        text: "Pickles handcrafted to perfection!",
+        name: "Keshav Ranju",
+        position: ""
     }
 ];
 
