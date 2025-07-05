@@ -118,3 +118,23 @@ form button[type="submit"]:hover {
     font-size: 0.95rem;
   }
 }
+/* Floating Home Button */
+.home-btn {
+  position: fixed;
+  bottom: 80px; /* stacked above WhatsApp */
+  right: 20px;
+  background-color: #b23a48;
+  color: white;
+  border-radius: 50%;
+  padding: 14px;
+  font-size: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.home-btn:hover {
+  transform: scale(1.1);
+  background-color: #8e2c38;
+}
