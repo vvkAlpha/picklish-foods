@@ -1,0 +1,23 @@
+<h2>Place a Custom Pickle Order</h2>
+<form id="orderForm">
+  <input name="name" placeholder="Your name" required />
+  <input name="email" type="email" placeholder="Email" required />
+
+  <label>Pickle Type:</label>
+  <select name="pickleType" required>
+    <option value="Spicy Mango">Spicy Mango</option>
+    <option value="Lime">Lime</option>
+    <option value="Garlic">Garlic</option>
+  </select>
+
+  <label>Spice Level:</label>
+  <select name="spiceLevel" required>
+    <option value="Mild">Mild</option>
+    <option value="Medium">Medium</option>
+    <option value="Hot">Hot</option>
+  </select>
+
+  <button type="submit">Submit Order</button>
+</form>
+
+<div id="orderStatus"></div>
