@@ -4,8 +4,9 @@ document.getElementById('orderForm').addEventListener('submit', async (e) => {
   const data = {
     name: form.name.value,
     email: form.email.value,
-    pickleType: form.pickleType.value,
+    pickle: form.pickle.value,
     spiceLevel: form.spiceLevel.value,
+    saltLevel: form.saltLevel.value,
     timestamp: new Date().toISOString()
   };
 
