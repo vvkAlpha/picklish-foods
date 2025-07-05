@@ -1,20 +1,12 @@
 picklish-foods/
-│
-├── assets/
-│   ├── css/
-│   │   └── product_page.css
-│   ├── js/
-│   │   └── product_page.js
-│   └── images/
-│       ├── *.jpg
-│       ├── *.jpg
-│       └── ...
-│
-├── products/
-│   ├── beef_Pickle.html
-│   ├── prawns_pickle.html
-│   └── ...
-│
-└── index.html
-│
-└── site_map.txt
+├─ index.html              # Homepage
+├─ products.html           # Pickle catalog with customization
+├─ about.html              # About Picklish story
+├─ contact.html            # Contact + Google Form
+├─ assets/
+│   ├─ css/styles.css
+│   └─ js/
+│       ├─ main.js
+│       └─ sheets.js       # Integrates with Google Sheets API
+├─ images/
+└─ favicon.ico

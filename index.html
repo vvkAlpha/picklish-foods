@@ -139,6 +139,37 @@
         </div>
     </section>
 
+    <section id="order" class="order-section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Customize Your Pickle</h2>
+      <p>Fill out the form to place a custom order</p>
+    </div>
+    <form id="orderForm" class="order-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+
+      <select name="pickleType" required>
+        <option value="">Choose Pickle Type</option>
+        <option>Spicy Mango</option>
+        <option>Garlic</option>
+        <option>Lime</option>
+      </select>
+
+      <select name="spiceLevel" required>
+        <option value="">Choose Spice Level</option>
+        <option>Mild</option>
+        <option>Medium</option>
+        <option>Hot</option>
+      </select>
+
+      <button type="submit">Submit Order</button>
+      <div id="orderStatus" class="order-status"></div>
+    </form>
+  </div>
+</section>
+
+
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials">
         <div class="container">
