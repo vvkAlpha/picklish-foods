@@ -1599,3 +1599,61 @@ footer::before {
       padding: 8px 12px;
     }
   }
+
+  /* Order Section */
+.order-section {
+  background-color: #fffdee;
+  padding: 60px 20px;
+}
+
+.order-section .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.order-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.order-form input,
+.order-form select,
+.order-form button {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.order-form input:focus,
+.order-form select:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0 0 4px rgba(40, 167, 69, 0.4);
+}
+
+.order-form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-form button:hover {
+  background-color: #218838;
+}
+
+.order-status {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
