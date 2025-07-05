@@ -1,0 +1,120 @@
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  background-color: #fff8f3;
+  color: #333;
+}
+
+/* Form container */
+form#orderForm {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #b23a48;
+}
+
+/* Labels */
+form label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+/* Inputs and selects */
+form input,
+form select {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  background-color: #fff;
+  transition: border 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #b23a48;
+  outline: none;
+}
+
+/* Submit button */
+form button[type="submit"] {
+  background-color: #b23a48;
+  color: white;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #8e2c38;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  padding: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Order status placeholder */
+#orderStatus {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  form#orderForm {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  form button[type="submit"] {
+    font-size: 0.95rem;
+  }
+}
