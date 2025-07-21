@@ -1,3 +1,3 @@
-# picklish-foods-test
-picklish-foods-test website
+# picklish-foods
+picklish-foods website
 
